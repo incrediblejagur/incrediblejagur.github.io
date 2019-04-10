@@ -1,0 +1,57 @@
+body{
+
+}
+
+h1{
+    color:white;
+    font-family: monospace;
+    font-size: 60px;
+    margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab button{
+    padding: 12px 18px;
+    color:black;
+    background-color: white;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid white;
+  
+
+}
+  
+
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px;
+    border-top: none;
+  }
+
