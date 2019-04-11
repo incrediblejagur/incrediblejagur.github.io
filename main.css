@@ -1,12 +1,11 @@
 body{
-
 }
 
 .heading{
     float:left;
     color:white;
-    font-family: 'monospace';
-    font-size: 60px;
+    font-family: 'Lato';
+    font-size: 70px;
     margin:10px;
     width:100%;
     
@@ -22,33 +21,44 @@ body{
   min-width: 100%;
   z-index: -1;
 }
-
-
-
     
 .tab{
   
-  float:left;
-  width:100%;
-  background-color: white;
+  margin:auto;
+  background-color: rgba(255, 255, 255, 0.562); 
    background:opacity 0.5;
+   overflow:auto;
+   width:100%;
+   float:left;
 }
 
-.tab button{
+.tablinks{
   padding: 12px 18px;
-  color:black;
   background-color: white;
 }
+
 
   
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  color:white;
+ 
   overflow:auto;
   float:left;
-  
+  background: rgba(255, 255, 255, 0.363); 
+  width: 100%;
+  margin-bottom: 10px;
 }
 
+h2{
+  font-size:75px;
+  width: 30%;
+}
 
+ul{
+  margin:5px;
+}
 
+h1, h2{
+  margin-left:5px;
+  margin-bottom:10px;
+}
