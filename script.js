@@ -10,3 +10,5 @@ function pagetabs(Names) {
   document.getElementById(Names).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById("About").click();
