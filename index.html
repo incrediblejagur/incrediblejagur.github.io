@@ -13,90 +13,23 @@
 
   </head>
 <body>
-  <div class=col-12>
   <video autoplay muted loop id="video-container" poster="media/load.png">
         <source src="media/b.mp4" type="video/mp4" >
       </video>
+    
+      <div class="col-7">
+  <h1 class="heading">Daniel Minter
+    <!-- <img class="picheader" src="media/me.jpg"> --></h1>    
   </div>
     
-    <div class="col-12">
-  <h1 class="heading">Daniel Minter</h1>
-    </div>
 
-
+      <div class="tab">
+        <button class="tablinks" onclick="pagetabs('CV')" >Curriculm Vitae</button>
+        <button class="tablinks" onclick="pagetabs('BackEnd')" >BackEnd</button>
+        <button class="tablinks" onclick="pagetabs('FrontEnd')" >FrontEnd</button>
+        <button class="tablinks" onclick="pagetabs('About')" >About</button>
+      </div>
     
-<div class="col-12">
-<div class="tab">
-<button class="tablinks" onclick="pagetabs('About')" >About</button>
-<button class="tablinks" onclick="pagetabs('FrontEnd')" >FrontEnd</button>
-<button class="tablinks" onclick="pagetabs('BackEnd')" >BackEnd</button>
-<button class="tablinks" onclick="pagetabs('CV')" >Curriculm Vitae</button>
-</div>
-</div>
-
-
-<div class="col-12">
-<div id="About" class="tabcontent">
-  
-   <h1 class="name">About me</h2>
-
-    <img class="picofme" src="media/me.jpg" alt="Avatar" >
-
-
-
-
-
-
-
-   <ul>
-   <li>Im 19 years old</li>
-   <li>I live in Cape Town,South Africa</li>
-   <li>Im a lifeguard at Muizenberg Beach</li>
-   <li>Currently studying at <span style="color:lightgreen;">CodeX</span>.</li>
-   <li>I love anything that has to do with technology.</li>
-   <li>I enjoy <b>chilling</b> in my spare time.</li>
-  </ul>
-</div>
-</div>
-
-
-<div class="col-12">
-<div id="FrontEnd" class="tabcontent">
-  <h1>FrontEnd</h1>
-  <p class="info">
-      <img class="frontimg" src="media/frontend.jpg" alt="Avatar" >
-    Below consists of some of the FrontEnd work ive been doing. Like building responsive
-    websites with HTML and CSS, and building a website to test my Javascript functions to see if they 
-    will work in edge case scenarios.
-  
-  </p>
-</div>
-</div>
-
-
-
-<div class="col-12">
-<div id="BackEnd" class="tabcontent">
-  <h1>BackEnd</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
-    sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
-    euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
-    Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
-</div>
-</div>
-
-
-<div class="col-12">
-<div id="CV" class="tabcontent">
-    <h1>Curriculm Vitae</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
-      sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
-      euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
-      Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
-  </div>
- </div>      
-
-        <script src="script.js" charset="utf-8"></script>
 
 
 
@@ -108,5 +41,81 @@
 
 
 
-</body>
-</html>
+      <div class="col-12">
+        <div id="About" class="tabcontent">
+          
+           <h1 class="name">About me</h2>
+        
+            <img class="picofme" src="media/me.jpg" alt="Avatar" >
+        
+        
+        
+        
+        
+        
+        
+           <ul>
+           <li>Im 19 years old</li>
+           <li>I live in Cape Town,South Africa</li>
+           <li>Im a lifeguard at Muizenberg Beach</li>
+           <li>Currently studying at <span style="color:lightgreen;">CodeX</span>.</li>
+           <li>I love anything that has to do with technology.</li>
+           <li>I enjoy <b>chilling</b> in my spare time.</li>
+          </ul>
+        </div>
+        </div>
+        
+        
+        <div id="FrontEnd" class="tabcontent">
+          <h1>FrontEnd</h1>
+          <p class="info">
+             <img class="frontimg" src="media/frontend.jpg" alt="Avatar">
+            Below consists of some of the FrontEnd work ive been doing. I built two resposive websites. One with HTML and CSS and
+            another using a CSS framework, both websites work well on all device displays as tested. I have also built a website
+            that uses the Mocha a Javascript framework used for testing programmes in my case it was used to test my Javascript
+            functions to see if they
+            will work in edge case scenarios.
+          
+          </p>
+        <div class="col-4">
+          <h3>Github hosted projects:</h3>
+          <li class="weblink" style="float:left"><a href= "https://incrediblejagur.github.io/basic_webpage/">basic_webpages</a></li>
+          <li class="weblink" style="float:left"><a href= "https://incrediblejagur.github.io/bootcamp-tests/">bootcamp-tests</a></li>
+        </div> 
+        
+        
+        </div>
+         
+        
+        
+        
+        <div class="col-12">
+        <div id="BackEnd" class="tabcontent">
+          <h1>BackEnd</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
+            sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
+            euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
+            Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+        </div>
+        </div>
+        
+        
+        <div class="col-12">
+        <div id="CV" class="tabcontent">
+            <h1>Curriculm Vitae</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
+              sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
+              euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
+              Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+          </div>
+         </div>      
+        
+                <script src="script.js" charset="utf-8"></script>
+        
+        
+        
+        
+        
+        
+    </body>
+    </html>
