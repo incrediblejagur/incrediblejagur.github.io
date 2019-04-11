@@ -6,33 +6,54 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-</head>
-<body background= "media/d.jpg">
-    <div class="heading">
-    <h1>Daniel Minter</h1>
+    <link rel="stylesheet" type="text/css" media="screen" href="simple-grid.css">
+
+  </head>
+<body>
+  
+  <video autoplay muted loop id="video-container" poster="media/load.png">
+        <source src="media/.mp4" type="video/mp4" >
+      </video>
+    
+    <div class="col-12">
+  <h1 class="heading">Daniel Minter</h1>
     </div>
 
-    <div class="tab">
-        <button class="tablinks" onclick="mytabs(event, 'About')">About</button>
-        <button class="tablinks" onclick="mytabs(event, 'FrontEnd')">FrontEnd</button>
-        <button class="tablinks" onclick="mytabs(event, 'BackEnd')">BackEnd</button>
-      </div>
-      
-      <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="FrontEnd" class="tabcontent">
-        <h3>FrontEnd</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="BackEnd" class="tabcontent">
-        <h3>BackEnd</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-      
+
+<div class="tab">
+<button class="tablinks" onclick="pagetabs('About')" >About</button>
+<button class="tablinks" onclick="pagetabs('FrontEnd')" >FrontEnd</button>
+<button class="tablinks" onclick="pagetabs('BackEnd')" >BackEnd</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <h1>About Me</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
+    sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
+    euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
+    Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+
+</div>
+
+<div id="FrontEnd" class="tabcontent">
+  <h1>FrontEnd</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
+    sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
+    euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
+    Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+
+</div>
+
+<div id="BackEnd" class="tabcontent">
+  <h1>BackEnd</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
+    sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
+    euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
+    Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+
+</div>
+        
+
 
         <script src="script.js" charset="utf-8"></script>
 

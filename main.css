@@ -2,56 +2,53 @@ body{
 
 }
 
-h1{
+.heading{
+    float:left;
     color:white;
-    font-family: monospace;
+    font-family: 'monospace';
     font-size: 60px;
     margin:10px;
+    width:100%;
+    
 }
 
 
 
+#video-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+.tab{
+  
+  float:left;
+  width:100%;
+  background-color: white;
+   background:opacity 0.5;
+}
 
 .tab button{
-    padding: 12px 18px;
-    color:black;
-    background-color: white;
+  padding: 12px 18px;
+  color:black;
+  background-color: white;
+}
+
+  
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  color:white;
+  overflow:auto;
+  float:left;
+  
 }
 
 
-.tab {
-    overflow: hidden;
-    border: 1px solid white;
-  
-
-}
-  
-
-  
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px;
-    border-top: none;
-  }
 
