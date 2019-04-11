@@ -1,0 +1,28 @@
+    .frontimg{
+      float:right;  
+      max-width:100%;
+      margin-right: 50px;
+      margin-left: 50px;
+    
+      margin-bottom: 50px;
+      height:auto;
+      
+     
+    }
+    
+    .tab{
+        margin-right:10px;
+        width:auto;
+        float:right;
+      }
+      
+      .tablinks{
+        padding: 12px 18px;
+        color:white;
+        float:right;
+      margin-top:20px;
+      background: rgba(255, 255, 255, 0);
+      border: solid white 1px;
+      margin-right:5px;
+      
+      }
