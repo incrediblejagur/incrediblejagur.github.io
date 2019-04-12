@@ -23,10 +23,10 @@
     
 
       <div class="tab">
-        <button class="tablinks" onclick="pagetabs('CV')" >Curriculm Vitae</button>
+        <button class="tablinks" onclick="pagetabs('CV')" id="defaultopen" >Curriculm Vitae</button>
         <button class="tablinks" onclick="pagetabs('BackEnd')" >BackEnd</button>
-        <button class="tablinks" onclick="pagetabs('FrontEnd')" >FrontEnd</button>
-        <button class="tablinks" onclick="pagetabs('About')" id="defaultopen" >About</button>
+        <button class="tablinks" onclick="pagetabs('FrontEnd')" style="margin-bottom:5px" >FrontEnd</button>
+        <button class="tablinks" onclick="pagetabs('About')"style="margin-bottom:5px"  >About</button>
       </div>
     
 
@@ -93,13 +93,74 @@
         
         
         <div class="col-12" style="margin:0px">
-        <div id="CV" class="tabcontent">
-            <h1>Curriculm Vitae</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
-              sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
-              euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
-              Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
-          </div>
+          <div id="CV" class="tabcontent">
+            <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
+            
+            <h1 class="greetcv" style="line-height:1"><img class="cvpic" src="media/me.jpg" alt="Avatar">
+        
+              Hi, Im Daniel Minter
+        
+            </h1>
+            <hr style="margin-left: 5px">
+            <p style="margin-left:5px">An aspiring web developer</p>
+            <div class="cvdiv">
+              <h1 class="cvhead">Profile</h1>
+              <hr>
+              <table>
+                <tr>
+                  <th>Full Name:</th>
+                  <td>Daniel Minter</td>
+                </tr>
+                <tr>
+                  <th>Age:</th>
+                  <td>19 years old</td>
+        
+                </tr>
+                <tr>
+                  <th>Mail:</th>
+                  <td>danielminter13@gmail.com</td>
+                </tr>
+              </table>
+        
+              <h1 class="cvhead">Education</h1>
+              <hr>
+              <p>I attended school at Wynberg Boys, and right now i am studying at Codex.</p>
+        
+        
+              <h1 class="cvhead">Work Experience</h1>
+              <hr>
+              <p>I was employed as a lifegaurd by the City of Cape. I have also coached swimming for a NPO.</p>
+        
+
+              <h1 class="cvhead">Qualifications</h1>
+              <hr>
+              <ul>
+               <li>National Senior Certificate</li>
+               <li>Qualified Swimming Instructor</li>
+               <li>ILS Lifeguarding Award</li>
+
+ 
+              </ul>
+        
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            </div>
          </div>      
         
                 <script src="script.js" charset="utf-8"></script>
