@@ -26,7 +26,7 @@
         <button class="tablinks" onclick="pagetabs('CV')" >Curriculm Vitae</button>
         <button class="tablinks" onclick="pagetabs('BackEnd')" >BackEnd</button>
         <button class="tablinks" onclick="pagetabs('FrontEnd')" >FrontEnd</button>
-        <button class="tablinks" onclick="pagetabs('About')" >About</button>
+        <button class="tablinks" onclick="pagetabs('About')" id="defaultopen" >About</button>
       </div>
     
 
@@ -40,18 +40,12 @@
 
 
 
-      <div class="col-12">
+      <div class="col-12" style="margin:0px">
         <div id="About" class="tabcontent">
           
            <h1 class="name">About me</h2>
         
-            <img class="picofme" src="media/me.jpg" alt="Avatar" >
-        
-        
-        
-        
-        
-        
+            <img class="picofme" src="media/me.jpg" alt="Avatar" >    
         
            <div class="center">
            <li>Im 19 years old</li>
@@ -64,7 +58,8 @@
         </div>
         </div>
         
-        <div class="col-12">
+
+        <div class="col-12" style="margin:0px">
         <div id="FrontEnd" class="tabcontent">
           <h1>FrontEnd</h1>
           <p class="info">
@@ -89,18 +84,15 @@
         
         
         
-        <div class="col-12">
+        <div class="col-12" style="margin:0px">
         <div id="BackEnd" class="tabcontent">
           <h1>BackEnd</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
-            sollicitudin, diam a condimentum volutpat, libero libero viverra lacus, in maximus tortor lectus in nisi. Vivamus
-            euismod placerat metus, eget egestas purus lobortis eu. Nullam ultricies massa orci, sed auctor metus posuere quis.
-            Sed ac erat id elit feugiat lacinia quis non nunc. Aenean vel dui at ligula laoreet aliquam</p>
+          <p class="info">Nothing yet.</p>
         </div>
         </div>
         
         
-        <div class="col-12">
+        <div class="col-12" style="margin:0px">
         <div id="CV" class="tabcontent">
             <h1>Curriculm Vitae</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue id quam nec commodo. Pellentesque
@@ -111,8 +103,8 @@
          </div>      
         
                 <script src="script.js" charset="utf-8"></script>
-        
-        
+        <script>document.getElementById("defaultopen").click()</script>
+              
         
         
         
