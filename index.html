@@ -1,185 +1,218 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>incrediblejagur</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="simple-grid.css">
-    <link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="respon.css">
-    <link rel="icon" type="image/ico" href="media/favicon.ico">
 
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>incrediblejagur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="simple-grid.css">
+  <link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="respon.css">
+  <link rel="icon" type="image/ico" href="media/favicon.ico">
+
+</head>
+
 <body>
   <video autoplay muted loop id="video-container" poster="media/load.png">
-        <source src="media/b.mp4" type="video/mp4" >
-      </video>
-    
-      <div class="col-7">
-  <h1 class="heading">Daniel Minter
-    <!-- <img class="picheader" src="media/me.jpg"> --></h1>    
+    <source src="media/b.mp4" type="video/mp4">
+  </video>
+
+  <div class="col-7">
+    <h1 class="heading">Daniel Minter</h1>
   </div>
-    
+  <!-- Tabs -->
+  <div class="tab">
+    <button class="tablinks" onclick="pagetabs(event, 'CV')">Curriculm Vitae</button>
+    <button class="tablinks" onclick="pagetabs(event, 'BackEnd')">BackEnd</button>
+    <button class="tablinks" onclick="pagetabs(event, 'FrontEnd')" style="margin-bottom:5px">FrontEnd</button>
+    <button class="tablinks" onclick="pagetabs(event, 'About')" style="margin-bottom:5px"
+      id="defaultopen">About</button>
+  </div>
+  <div class="col-12" style="margin:0px">
 
-      <div class="tab">
-        <button class="tablinks" onclick="pagetabs(event, 'CV')" >Curriculm Vitae</button>
-        <button class="tablinks" onclick="pagetabs(event, 'BackEnd')" >BackEnd</button>
-        <button class="tablinks" onclick="pagetabs(event, 'FrontEnd')" style="margin-bottom:5px" >FrontEnd</button>
-        <button class="tablinks" onclick="pagetabs(event, 'About')"style="margin-bottom:5px" id="defaultopen" >About</button>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- About Page -->
+    <div id="About" class="tabcontent">
+
+      <h1>About me</h1>
+      <hr style="margin:10px">
+
+      <img class="picofme" src="media/me.jpg" alt="Avatar">
+
+      <div class="row">
+
+        <ul>
+          <li>Im 19 years old.</li>
+          <li>I live in Cape Town,South Africa.</li>
+          <li>Im a lifeguard at Muizenberg Beach.</li>
+          <li>Currently studying at <span style="color:lightgreen;">CodeX.</span>.</li>
+          <li>I love anything that has to do with technology.</li>
+          <li>I enjoy <b>chilling</b> in my spare time.</li>
+        </ul>
       </div>
-    
+      <div class=" recentPro">
+        <h3>Recent Projects</h3>
+        <p>I made a web based application that greets you in<br>
+          different languages based on what language the user<br>
+          chooses. All you have to do is enter your name and choose<br>
+          a language. Try it out, linked below.<br>
+          <a href="https://incrediblejagur.github.io/greetings/"><button class="weblink" style="float:left">Greetings
+              Project</button></a>
+
+        </p>
+      </div>
+
+    </div>
 
 
 
 
 
 
+    <!-- FrontEnd -->
+    <div id="FrontEnd" class="tabcontent">
+      <h1>FrontEnd</h1>
+      <p class="info">
+        <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
+        Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and
+        CSS and
+        another using a CSS framework, both websites work well on most displays tested. I have also built a website
+        that uses the Mocha, a Java framework used for testing programmes. In my case it was used to test my Javascript
+        functions, to see if they
+        will work in edge case scenarios.
+
+      </p>
+      <div class="git">
+        <h3>Github hosted projects:</h3>
+        <div class="col-12">
+
+          <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
+              style="float:left">basic_webpages</button></a>
+          <a href="https://incrediblejagur.github.io/bootcamp-tests/"><button class="weblink"
+              style="float:left">bootcamp-tests</button></a>
+          <a href="https://incrediblejagur.github.io/dom-intro/"><button class="weblink"
+              style="float:left">dom-intro</button></a>
+          <a href="https://incrediblejagur.github.io/dom-intro/test.html"><button class="weblink"
+              style="float:left">Unit Testing DOM's</button></a>
+          <a href="https://incrediblejagur.github.io/greetings/"><button class="weblink" style="float:left">Greetings
+              Project</button></a>
+          <a href="https://incrediblejagur.github.io/registration_numbers/"><button class="weblink"
+              style="float:left">Registration Project</button></a>
 
 
-
-
-
-      <div class="col-12" style="margin:0px">
-        <div id="About" class="tabcontent">
-          
-           <h1>About me</h1>
-           <hr style="margin:10px">
-
-            <img class="picofme" src="media/me.jpg" alt="Avatar" >    
-        
-           <div>
-
-           <ul>
-            <li>Im 19 years old.</li>
-           <li>I live in Cape Town,South Africa.</li>
-           <li>Im a lifeguard at Muizenberg Beach.</li>
-           <li>Currently studying at <span style="color:lightgreen;">CodeX.</span>.</li>
-           <li>I love anything that has to do with technology.</li>
-           <li>I enjoy <b>chilling</b> in my spare time.</li>
-          </ul> 
-          </div>
         </div>
-        </div>
-        
+      </div>
 
-        <div class="col-12" style="margin:0px">
-        <div id="FrontEnd" class="tabcontent">
-          <h1>FrontEnd</h1>
-          <p class="info">
-             <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
-            Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and CSS and
-            another using a CSS framework, both websites work well on most displays tested. I have also built a website
-            that uses the Mocha, a Java framework used for testing programmes. In my case it was used to test my Javascript
-            functions, to see if they
-            will work in edge case scenarios.
-          
-          </p>
-          <div class="git">
-          <h3 >Github hosted projects:</h3>
-          <div class="col-12">
-         
-            <a href= "https://incrediblejagur.github.io/basic_webpage/"><button class="weblink" style="float:left">basic_webpages</button></a>
-            <a href= "https://incrediblejagur.github.io/bootcamp-tests/"><button class="weblink" style="float:left">bootcamp-tests</button></a>
-            <a href= "https://incrediblejagur.github.io/dom-intro/"><button class="weblink" style="float:left">dom-intro</button></a>
-            <a href= "https://incrediblejagur.github.io/dom-intro/test.html"><button class="weblink" style="float:left">Unit Testing DOM's</button></a>
-            <a href= "https://incrediblejagur.github.io/greetings/"><button class="weblink" style="float:left">Greetings Project</button></a>
-            <a href= "https://incrediblejagur.github.io/registration_numbers/"><button class="weblink" style="float:left">Registration Project</button></a>
-            
+    </div>
 
-        </div> 
-        </div>
-        
-        </div>
-         
-        
-        
-        
-        <div class="col-12" style="margin:0px">
-        <div id="BackEnd" class="tabcontent">
-          <h1>BackEnd</h1>
-          <p class="info">Nothing yet.</p>
-        </div>
-        </div>
-        
-        
-        <div class="col-12" style="margin:0px">
-          <div id="CV" class="tabcontent">
-            <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
-            
-            <h1 class="greetcv" style="line-height:1"><img class="cvpic" src="media/me.jpg" alt="Avatar">
-        
-              <span class="wordspace">Hi,</span><span class="wordspace">I'm</span>Daniel Minter
-        
-            </h1>
-            <hr style="margin-left: 5px">
-            <p style="margin-left:5px">An aspiring web developer</p>
-            <div class="cvdiv">
-              <h1 class="cvhead">Profile</h1>
-              <hr>
-              <table>
-                <tr>
-                  <th>Full Name:</th>
-                  <td>Daniel Minter</td>
-                </tr>
-                <tr>
-                  <th>Age:</th>
-                  <td>19 years old</td>
-        
-                </tr>
-                <tr>
-                  <th>Mail:</th>
-                  <td>danielminter13@gmail.com</td>
-                </tr>
-              </table>
-        
-              <h1 class="cvhead">Education</h1>
-              <hr>
-              <p>I attended school at Wynberg Boys, and right now i am studying at Codex.</p>
-        
-        
-              <h1 class="cvhead">Work Experience</h1>
-              <hr>
-              <p>I was employed as a lifegaurd by the City of Cape. I have also coached swimming for a NPO.</p>
-        
 
-              <h1 class="cvhead">Qualifications</h1>
-              <hr>
-              <ul>
-               <li>National Senior Certificate</li>
-               <li>Qualified Swimming Instructor</li>
-               <li>ILS Lifeguarding Award</li>
 
- 
-              </ul>
-        
-            </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            </div>
-         </div>      
-        
-                <script src="script.js" charset="utf-8"></script>
-        <script>document.getElementById("defaultopen").click()</script>
-              
-        
-        
-      
-        
-    </body>
-    </html>
+    <!-- BackEnd -->
+    <div class="col-12" style="margin:0px">
+      <div id="BackEnd" class="tabcontent">
+        <h1>BackEnd</h1>
+        <p class="info">Nothing yet.</p>
+      </div>
+    </div>
+
+
+    <!-- CV -->
+    <div class="col-12" style="margin:0px">
+      <div id="CV" class="tabcontent">
+        <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
+
+        <h1 class="greetcv" style="line-height:1"><img class="cvpic" src="media/me.jpg" alt="Avatar">
+
+          <span class="wordspace">Hi,</span><span class="wordspace">I'm</span>Daniel Minter
+
+        </h1>
+        <hr style="margin-left: 5px">
+        <p style="margin-left:5px">An aspiring web developer</p>
+        <div class="cvdiv">
+          <h1 class="cvhead">Profile</h1>
+          <hr>
+          <table>
+            <tr>
+              <th>Full Name:</th>
+              <td>Daniel Minter</td>
+            </tr>
+            <tr>
+              <th>Age:</th>
+              <td>19 years old</td>
+
+            </tr>
+            <tr>
+              <th>Mail:</th>
+              <td>danielminter13@gmail.com</td>
+            </tr>
+          </table>
+
+          <h1 class="cvhead">Education</h1>
+          <hr>
+          <p>I attended school at Wynberg Boys, and right now i am studying at Codex.</p>
+
+
+          <h1 class="cvhead">Work Experience</h1>
+          <hr>
+          <p>I was employed as a lifegaurd by the City of Cape. I have also coached swimming for a NPO.</p>
+
+
+          <h1 class="cvhead">Qualifications</h1>
+          <hr>
+          <ul>
+            <li>National Senior Certificate</li>
+            <li>Qualified Swimming Instructor</li>
+            <li>ILS Lifeguarding Award</li>
+
+
+          </ul>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+  <script>document.getElementById("defaultopen").click()</script>
+
+
+
+
+
+</body>
+
+</html>
