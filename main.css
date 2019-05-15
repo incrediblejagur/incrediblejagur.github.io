@@ -63,15 +63,10 @@ h1{
   color:black;
 }
   
-@media (max-width:719px){
-   .tabcontent{
-    padding-right:24px;
-    width:100%;
-
-   }
 
 
-}
+
+
   .tabcontent {
   display: none;
   overflow:auto;
@@ -115,11 +110,21 @@ h1{
 
 .frontimg{
   margin-right:10px;  
+  margin-left:10px;
   max-width:100%;
   float:right;
   height:auto;
 }
 
+@media (min-width: 425){
+  .frontimg{
+    margin-right:auto;  
+    margin-left:auto;
+    max-width:100%;
+    
+    height:auto;
+  }
+}
 
 
 .weblink{
@@ -189,9 +194,15 @@ th{
 .recentPro{
   float:left;
   margin:10px;
+  margin-right: 5px;
   padding:2px;
+  width:33%;
 }
 
 ::-webkit-scrollbar { 
   display: none; 
 }
+
+
+
+
