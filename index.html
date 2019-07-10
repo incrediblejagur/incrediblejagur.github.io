@@ -29,11 +29,12 @@
   </div>
   <!-- Tabs -->
   <div class="tab">
-    <button class="tablinks" onclick="pagetabs(event, 'CV')">Curriculm Vitae</button>
-    <button class="tablinks" onclick="pagetabs(event, 'BackEnd')">BackEnd</button>
-    <button class="tablinks" onclick="pagetabs(event, 'FrontEnd')" style="margin-bottom:5px">FrontEnd</button>
     <button class="tablinks" onclick="pagetabs(event, 'About')" style="margin-bottom:5px"
       id="defaultopen">About</button>
+    <button class="tablinks" onclick="pagetabs(event, 'FrontEnd')" style="margin-bottom:5px">FrontEnd</button>
+    <button class="tablinks" onclick="pagetabs(event, 'BackEnd')">BackEnd</button>
+    <button class="tablinks" onclick="pagetabs(event, 'CV')">Curriculm Vitae</button>
+
   </div>
   <div class="col-12" style="margin:0px">
 
@@ -134,7 +135,26 @@
     <div class="col-12" style="margin:0px">
       <div id="BackEnd" class="tabcontent">
         <h1>BackEnd</h1>
-        <p class="info">Nothing yet.</p>
+        <p class="info">
+            <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
+            Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and
+            CSS and
+            another using a CSS framework, both websites work well on most displays tested. I have also built a website
+            that uses the Mocha, a Java framework used for testing programmes. In my case it was used to test my
+            Javascript
+            functions, to see if they
+            will work in edge case scenarios.
+        </p>
+        <div class="git">
+            <h3>Github hosted projects:</h3>
+            <div class="col-12">
+  
+              <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
+                  style="float:left">node Js test</button></a>
+              <a href="https://github.com/incrediblejagur/SettingsBill-expressJS"><button class="weblink"
+                  style="float:left">SettingsBill-ExpressJs</button></a>
+            </div>
+          </div>
       </div>
     </div>
 
