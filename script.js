@@ -1,3 +1,6 @@
+var coverBtn = document.getElementById('cover-btn');
+var coverEle = document.getElementById('cover-elem');
+var portflio = document.getElementById('portfolio');
 function pagetabs(evt, Names) {
   var i, tabcontent, tablinks;
  
@@ -15,3 +18,9 @@ for (i = 0; i < tablinks.length; i++) {
 document.getElementById(Names).style.display = "block";
 evt.currentTarget.className += " active";
 }
+
+coverBtn.addEventListener('click', function(){
+    coverEle.classList.add('hide')
+    portflio.classList.remove('hide')
+    portflio.classList.add('show')
+})

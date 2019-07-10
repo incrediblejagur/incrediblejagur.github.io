@@ -23,7 +23,13 @@
   <video autoplay muted loop id="video-container" poster="media/load.png">
     <source src="media/b.mp4" type="video/mp4">
   </video>
+<div class="center cover" id="cover-elem">
+  <h1 class="">Hello I'm <span class="cover-name"> Daniel Minter</span> an aspiring web developer.
+</h1>
+<button class="tablinks" id="cover-btn">View My Work</button>
+</div>
 
+<div id="portfolio"class="hide">
   <div class="col-7">
     <h1 class="heading">Daniel Minter</h1>
   </div>
@@ -93,8 +99,9 @@
     <div class="col-12" style="margin:0px">
       <div id="FrontEnd" class="tabcontent">
         <h1>FrontEnd</h1>
-        <p class="info">
+        <div class="info">
           <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
+          <p style="font-size:25px">
           Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and
           CSS and
           another using a CSS framework, both websites work well on most displays tested. I have also built a website
@@ -102,11 +109,8 @@
           Javascript
           functions, to see if they
           will work in edge case scenarios.
-
-        </p>
-        <div class="git">
+          </p>
           <h3>Github hosted projects:</h3>
-          <div class="col-12">
 
             <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
                 style="float:left">basic_webpages</button></a>
@@ -124,45 +128,44 @@
                 style="float:left">Matching Day's</button></a>
             <a href="https://incrediblejagur.github.io/shopping_catalogue/"><button class="weblink"
                 style="float:left">Shopping Catalogue</button></a>
-          </div>
+            </div>
         </div>
 
       </div>
-    </div>
+    
 
 
     <!-- BackEnd -->
     <div class="col-12" style="margin:0px">
       <div id="BackEnd" class="tabcontent">
         <h1>BackEnd</h1>
-        <p class="info">
-            <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
-            Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and
-            CSS and
-            another using a CSS framework, both websites work well on most displays tested. I have also built a website
-            that uses the Mocha, a Java framework used for testing programmes. In my case it was used to test my
-            Javascript
-            functions, to see if they
-            will work in edge case scenarios.
-        </p>
-        <div class="git">
+        <div class="info">
+            <img class="frontimg" src="media/back.jpg" width="500px" height="320px">
+
+        <p style="font-size:25px">
+          
+            Below consists of some of the Backend work i have been doing using Node JS and Express JS.
+          </p>
             <h3>Github hosted projects:</h3>
-            <div class="col-12">
-  
-              <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
-                  style="float:left">node Js test</button></a>
-              <a href="https://github.com/incrediblejagur/SettingsBill-expressJS"><button class="weblink"
-                  style="float:left">SettingsBill-ExpressJs</button></a>
-            </div>
-          </div>
+            
+          
+            <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
+                style="float:left">Testing nodeJs modules</button></a>
+            <a href="https://github.com/incrediblejagur/SettingsBill-expressJS"><button class="weblink"
+                style="float:left">SettingsBill-ExpressJs</button></a>
+              
+            </div>              
       </div>
     </div>
 
 
     <!-- CV -->
     <div class="col-12" style="margin:0px">
-      <div id="CV" class="tabcontent">
-        <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
+
+      <div id="CV" class="tabcontent"> 
+          <!-- <iframe class="backend-iframe" src="https://github.com/incrediblejagur">d</iframe> -->
+
+        <!-- <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
 
         <h1 class="greetcv" style="line-height:1"><img class="cvpic" src="media/me.jpg" alt="Avatar">
 
@@ -208,9 +211,9 @@
             <li>ILS Lifeguarding Award</li>
 
 
-          </ul>
+          </ul> -->
 
-        </div>
+        </div> 
 
 
 
@@ -229,6 +232,7 @@
 
 
 
+  </div>
   </div>
   <script src="script.js" charset="utf-8"></script>
   <script>document.getElementById("defaultopen").click()</script>
