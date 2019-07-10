@@ -207,12 +207,11 @@ th{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width:100%;
-  
+  animation: covereffect 1s;
 }
 
 .hide{
   display:none;
-  animation: covereffect 3s;
 }
 
 .show{
@@ -229,7 +228,10 @@ color:white;
   color:rgb(0, 0, 0);
   
 }
-
+body{
+  background-color: black;
+  animation: covereffect 3s;
+}
 @keyframes covereffect {
   
   to {opacity: 1;}
