@@ -1,0 +1,668 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+/* a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+} */
+
+/* a:active, a:hover {
+    outline-width: 0
+} */
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    position: relative;
+    font-family: 'Aileron', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+    background: #fff
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    color: #263238
+}
+
+.header {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: left;
+    clear: both;
+    border-bottom: 1px solid #ECEFF1;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem
+}
+
+.header .links {
+    float: right;
+    font-size: 11pt;
+    list-style: none;
+    margin: 0
+}
+
+.header .links li {
+    float: left
+}
+
+.header .links a {
+    margin: 0 6px;
+    color: #9b9c9f;
+    position: relative;
+    text-decoration: none
+}
+
+.header .links a:before {
+    position: absolute;
+    content: '';
+    transition: transform .18s ease-in-out;
+    background: #9b9c9f;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    height: 1px;
+    width: 100%
+}
+
+.header .links a:hover:before {
+    transform: scaleX(1)
+}
+
+.header .title, .header .title a {
+    color: #263238;
+    font-size: 30pt;
+    font-weight: 200;
+    margin: 0;
+    letter-spacing: -3px;
+    text-decoration: none;
+    transition: opacity ease 0.25s
+}
+
+.header .title a:hover {
+    opacity: 0.4
+}
+
+.header .sub-title {
+    color: #b0b1b3;
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    word-spacing: 3px;
+    margin: 0;
+    font-size: 16pt;
+    padding-bottom: 0
+}
+
+.hero {
+    padding: 2rem 0;
+    font-size: 18pt;
+    line-height: 1.4;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    margin-bottom: 36px
+}
+
+.container {
+    padding: 0 1rem;
+    max-width: 1020px;
+    margin: 0 auto;
+    font-weight: 300
+}
+
+.portfolio {
+    margin-top: 2rem
+}
+
+.portfolio h1 {
+    font-weight: 300;
+    font-size: 30pt;
+    margin-top: 2.5rem
+}
+
+.portfolio .section {
+    content: "";
+    padding: 3rem 0;
+    margin: 1rem 0
+}
+
+.portfolio .section.dark {
+    background: #263238;
+    color: #fff
+}
+
+.portfolio .section.dark .description .tags a, .portfolio .section.dark .description .tags span {
+    color: #f8f8f8
+}
+
+.portfolio .section.dark .description .btn {
+    background: #f8f8f8;
+    color: #263238
+}
+
+.portfolio .section.dark .description .btn:hover {
+    color: #f8f8f8;
+    background: #263238;
+    border: 2px solid #f8f8f8
+}
+
+.portfolio .section .description, .portfolio .section .caption {
+    padding: 0.5rem;
+    font-size: 17px
+}
+
+.portfolio .section .description h3 {
+    margin-top: 0;
+    padding-top: 0.25rem;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 1.5rem
+}
+
+.portfolio .section .description .links {
+    margin-top: 2rem
+}
+
+.portfolio .section .description .tags {
+    margin-top: 1.5rem
+}
+
+.portfolio .section .description .tags span, .portfolio .section .description .tags a {
+    color: #263238;
+    font-size: 80%;
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid #b0b1b3;
+    padding: 1px 5px;
+    border-radius: 2px;
+    text-decoration: none
+}
+
+.portfolio .section .description .tags a:hover {
+    text-decoration: underline
+}
+
+.portfolio .section .caption p {
+    color: #b0b1b3
+}
+
+.portfolio .section .thumb {
+    max-height: 330px;
+    overflow: hidden
+}
+
+.portfolio .section .thumb img {
+    max-width: 100%;
+    float: right
+}
+
+.portfolio .section .thumb img.p50 {
+    width: 50%
+}
+
+.portfolio .section .thumb img.p60 {
+    width: 60%
+}
+
+.portfolio .section .thumb:first-child img {
+    float: left
+}
+
+.portfolio .section .thumb.logo img {
+    max-height: 180px
+}
+
+.btn {
+    color: #fff;
+    background: #263238;
+    text-decoration: none;
+    padding: 0.4rem 1.4rem;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    transition: all ease 0.25s
+}
+
+.btn:hover {
+    color: #263238;
+    background: #fff;
+    border: 2px solid #263238
+}
+
+.main {
+    clear: both;
+    content: "";
+    display: table;
+    width: 100%
+}
+
+.main ul {
+    list-style: none;
+    background: #263238;
+    padding: 0
+}
+
+.main ul li {
+    float: left;
+    display: table;
+    margin-bottom: 18px;
+    width: 100%
+}
+
+.main ul li a {
+    padding: 0;
+    padding-left: 3px;
+    margin: 0;
+    display: table-cell;
+    width: 140px;
+    height: 140px;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    text-align: left;
+    border-width: 2px;
+    background: #fff
+}
+
+.main ul li a:hover {
+    color: #fff
+}
+
+a.s1 {
+    color: #00b2ec;
+    border-color: #00b2ec
+}
+
+a.s1:hover {
+    border-color: #00b2ec;
+    background: #00b2ec
+}
+
+a.s2 {
+    color: #00526d;
+    border-color: #00526d
+}
+
+a.s2:hover {
+    border-color: #00526d;
+    background: #00526d
+}
+
+a.s3 {
+    color: #21a1cb;
+    border-color: #21a1cb
+}
+
+a.s3:hover {
+    border-color: #21a1cb;
+    background: #21a1cb
+}
+
+.footer {
+    margin: 0;
+    margin-top: 35px;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    background: #f8f8f8
+}
+
+.footer .container {
+    padding: 2rem;
+    color: #b0b1b3
+}
+
+.footer .container a {
+    color: #9b9c9f
+}
+
+.main-gallery {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    height: auto
+}
+
+.main-gallery a {
+    width: 50%;
+    transition: .8s opacity;
+    padding: 2px
+}
+
+.main-gallery a:hover {
+    opacity: 0.8
+}
+
+.float-right {
+    float: right
+}
+
+.row {
+    overflow: hidden;
+    position: relative
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media (min-width: 576px) {
+    .container {
+        padding: 0 1.75rem;
+        transition: padding ease .5s
+    }
+    .portfolio .section {
+        padding: 5rem 0;
+        margin: 2rem 0
+    }
+    .main ul li {
+        width: auto;
+        margin-left: 18px
+    }
+    .main ul li:first-child {
+        margin-left: 0
+    }
+    .portfolio .section .description, .portfolio .section .caption {
+        padding-left: 1.25rem;
+        padding-right: 0
+    }
+    .portfolio .section .description:first-child, .portfolio .section .caption:first-child {
+        padding-left: 0;
+        padding-right: 1.25rem
+    }
+    .portfolio .section .caption p {
+        position: absolute;
+        bottom: 0
+    }
+    .row .c1-2 {
+        display: block;
+        float: left;
+        width: 50%
+    }
+    .row .c1-3 {
+        display: block;
+        float: left;
+        width: 33.333%
+    }
+    .row .c2-3 {
+        display: block;
+        float: left;
+        width: 66.666%
+    }
+    .row .c1-4 {
+        display: block;
+        float: left;
+        width: 25%
+    }
+    .row .c1-5 {
+        display: block;
+        float: left;
+        width: 20%
+    }
+    .row .c2-5 {
+        display: block;
+        float: left;
+        width: 40%
+    }
+    .row .c3-5 {
+        display: block;
+        float: left;
+        width: 60%
+    }
+    .row .c4-5 {
+        display: block;
+        float: left;
+        width: 80%
+    }
+    .main-gallery a {
+        width: 33.33%
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem
+    }
+    .hero {
+        font-size: 22pt
+    }
+    .portfolio .section {
+        padding: 5.5rem 0;
+        margin: 3rem 0
+    }
+    .portfolio .section .description, .portfolio .section .caption {
+        padding-left: 2.5rem;
+        padding-right: 0
+    }
+    .portfolio .section .description:first-child, .portfolio .section .caption:first-child {
+        padding-left: 0;
+        padding-right: 2.5rem
+    }
+    .main ul li a {
+        font-size: 32px;
+        width: 210px
+    }
+    .main-gallery a {
+        width: 25%
+    }
+}
+

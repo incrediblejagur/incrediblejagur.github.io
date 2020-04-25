@@ -1,247 +1,61 @@
-<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="theme-color" content="Black">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>incrediblejagur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="simple-grid.css">
-  <link rel="stylesheet" media="screen and (min-width: 800px)" type="text/css" href="respon.css">
-  <link rel="icon" type="image/ico" href="media/favicon.ico">
 
+  <title>Home · DanTheDev</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Aileron:300,400">
 </head>
-<style>
-  iframe::-webkit-scrollbar {
-    display: none;
-  }
-</style>
 
 <body>
-  <video autoplay muted loop id="video-container" poster="media/load.png">
-    <source src="media/b.mp4" type="video/mp4">
-  </video>
-<div class="center cover" id="cover-elem">
-  <h1 class="">Hello I'm <span class="cover-name"> Daniel Minter</span> an aspiring web developer.
-</h1>
-<button class="tablinks" id="cover-btn">View My Work</button>
-</div>
+  <section class="container">
+    <section class="header">
+      <ul class="links">
+        <li>
+          <a href="http://github.com/incrediblejagur">Github</a>
+        </li>
+      </ul>
 
-<div id="portfolio"class="hide">
+      <h1 class="title">
+        <a href="/">
+          Daniel Minter
+        </a>
+      </h1>
+    </section>
 
-    <div class="nav-bar">
-    <h4 class="heading">	&#60;Daniel Minter	&#62;</h4>
-  
-  <!-- Tabs -->
-  <div class="tab">
-    <button class="tablinks" onclick="pagetabs(event, 'About')" style="margin-bottom:5px"
-      id="defaultopen">About</button>
-    <button class="tablinks" onclick="pagetabs(event, 'FrontEnd')" style="margin-bottom:5px">FrontEnd</button>
-    <button class="tablinks" onclick="pagetabs(event, 'BackEnd')">BackEnd</button>
-    <button class="tablinks" onclick="pagetabs(event, 'CV')">Curriculm Vitae</button>
+
+    <div class="main" role="main">
+      <p class="hero">Full Stack Web Developer with a love for creating and collaborating.<br>
+                    
+      
+      </p>
+
+
+      <h1 class="sub-title">Projects</h1>
+
+      <a href="https://github.com/Ghost-Zen/Audago"><img src="/assets/images/audago.png"></a>
+      <div>&nbsp;</div>
+      <a href="https://github.com/incrediblejagur/rsa_covid-19"><img src="/assets/images/rsa_covid-19.png"></a>
+      <div>&nbsp;</div>
+      <a href="https://github.com/incrediblejagur/suduko-webapp"><img src="/assets/images/sudoku2.png"></a>
+      <div>&nbsp;</div>
+      <a href="https://github.com/incrediblejagur/nukes-news"><img src="/assets/images/nukes.png"></a>
+      <div>&nbsp;</div>
+    </div>
+
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <a href="/">Home</a> - Daniel Minter
+    </div>
   </div>
-    </div>
-  <div class="col-12" style="margin:0px">
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- About Page -->
-    <div class="col-12" style="margin:0px">
-      <div id="About" class="tabcontent">
-
-        <h1>About me</h1>
-        <hr style="margin:10px">
-
-        <img class="picofme" src="media/me.jpg" alt="Avatar">
-
-        <div class="row">
-
-          <ul>
-            <li>Im 19 years old.</li>
-            <li>I live in Cape Town,South Africa.</li>
-            <li>Im a lifeguard at Muizenberg Beach.</li>
-            <li>Currently studying at <span style="color:lightgreen;">CodeX.</span>.</li>
-            <li>I love anything that has to do with technology.</li>
-            <li>I enjoy <b>chilling</b> in my spare time.</li>
-          </ul>
-        </div>
-        <div class=" recentPro">
-          <h3>Recent Projects</h3>
-          <p>I made a web based application that greets you in
-            different languages based on what language the user
-            chooses. All you have to do is enter your name and choose
-            a language. Try it out, linked below.
-
-          </p>
-          <a href="https://incrediblejagur.github.io/greetings/"><button class="weblink" style="float:left">Greetings
-              Project</button></a>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <!-- FrontEnd -->
-    <div class="col-12" style="margin:0px">
-      <div id="FrontEnd" class="tabcontent">
-        <h1>FrontEnd</h1>
-        <div class="info">
-          <img class="frontimg" src="media/frontend.jpg" width="500px" height="320px">
-          <p style="font-size:25px">
-          Below consists of some of the FrontEnd work ive been doing. I built two responsive websites. One with HTML and
-          CSS and
-          another using a CSS framework, both websites work well on most displays tested. I have also built a website
-          that uses the Mocha, a Java framework used for testing programmes. In my case it was used to test my
-          Javascript
-          functions, to see if they
-          will work in edge case scenarios.
-          </p>
-          <h3>Github hosted projects:</h3>
-<div style="display:inline-block">
-            <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
-                style="float:left">basic_webpages</button></a>
-            <a href="https://incrediblejagur.github.io/bootcamp-tests/"><button class="weblink"
-                style="float:left">bootcamp-tests</button></a>
-            <a href="https://incrediblejagur.github.io/dom-intro/"><button class="weblink"
-                style="float:left">dom-intro</button></a>
-            <a href="https://incrediblejagur.github.io/dom-intro/test.html"><button class="weblink"
-                style="float:left">Unit Testing DOM's</button></a>
-            <a href="https://incrediblejagur.github.io/greetings/"><button class="weblink" style="float:left">Greetings
-                Project</button></a>
-            <a href="https://incrediblejagur.github.io/registration_numbers/"><button class="weblink"
-                style="float:left">Registration Project</button></a>
-            <a href="https://incrediblejagur.github.io/matching-days/"><button class="weblink"
-                style="float:left">Matching Day's</button></a>
-            <a href="https://incrediblejagur.github.io/shopping_catalogue/"><button class="weblink"
-                style="float:left">Shopping Catalogue</button></a>
-            </div>
-        </div>
-</div>
-      </div>
-    
-
-
-    <!-- BackEnd -->
-    <div class="col-12" style="margin:0px">
-      <div id="BackEnd" class="tabcontent">
-        <h1>BackEnd</h1>
-        <div class="info">
-            <img class="frontimg" src="media/back.jpg" width="500px" height="320px">
-
-        <p style="font-size:25px; width:auto">
-          
-            Below consists of some of the Backend work i have been doing using Node JS and Express JS.
-          </p>
-            <h3>Github hosted projects:</h3>
-            
-          
-            <a href="https://incrediblejagur.github.io/basic_webpage/"><button class="weblink"
-                style="float:left">Testing nodeJs modules</button></a>
-            <a href="https://github.com/incrediblejagur/SettingsBill-expressJS"><button class="weblink"
-                style="float:left">SettingsBill-ExpressJs</button></a>
-              
-            </div>              
-      </div>
-    </div>
-
-
-    <!-- CV -->
-    <div class="col-12" style="margin:0px">
-
-      <div id="CV" class="tabcontent"> 
-          <!-- <iframe class="backend-iframe" src="https://github.com/incrediblejagur">d</iframe> -->
-
-        <!-- <h1 style="font-size:40px; margin:10px; line-height: 1"><u>Curriculm Vitae</u></h1>
-
-        <h1 class="greetcv" style="line-height:1"><img class="cvpic" src="media/me.jpg" alt="Avatar">
-
-          <span class="wordspace">Hi,</span><span class="wordspace">I'm</span>Daniel Minter
-
-        </h1>
-        <hr style="margin-left: 5px">
-        <p style="margin-left:5px">An aspiring web developer</p>
-        <div class="cvdiv">
-          <h1 class="cvhead">Profile</h1>
-          <hr>
-          <table>
-            <tr>
-              <th>Full Name:</th>
-              <td>Daniel Minter</td>
-            </tr>
-            <tr>
-              <th>Age:</th>
-              <td>19 years old</td>
-
-            </tr>
-            <tr>
-              <th>Mail:</th>
-              <td>danielminter13@gmail.com</td>
-            </tr>
-          </table>
-
-          <h1 class="cvhead">Education</h1>
-          <hr>
-          <p>I attended school at Wynberg Boys, and right now i am studying at Codex.</p>
-
-
-          <h1 class="cvhead">Work Experience</h1>
-          <hr>
-          <p>I was employed as a lifegaurd by the City of Cape. I have also coached swimming for a NPO.</p>
-
-
-          <h1 class="cvhead">Qualifications</h1>
-          <hr>
-          <ul>
-            <li>National Senior Certificate</li>
-            <li>Qualified Swimming Instructor</li>
-            <li>ILS Lifeguarding Award</li>
-
-
-          </ul> -->
-
-        </div> 
-
-
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-  </div>
-  </div>
-  <script src="script.js" charset="utf-8"></script>
-  <script>document.getElementById("defaultopen").click()</script>
-
-
-
-
-
 </body>
 
 </html>
